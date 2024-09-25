@@ -1,28 +1,92 @@
-footer {
-    background-color: lightblue;
-}
-.container2 {
+/* Đặt chung cho body */
+body {
+    font-family: Times New Roman, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; /* Đặt chiều hiển thị dọc */
-    align-items: flex-end; /* Căn phần tử con về bên phải */
+    flex-direction: column;
+    align-items: center;
+}
 
-}
-.item {
-    /*flex: 0 0 calc(33.33% - 20px);*/
-    margin: 10px;
+/* Phần banner */
+.banner {
+    background-color: #524C42; /* Màu nền của banner */
+    width: 100%;
     text-align: center;
-    font-size: 24px; /* Đặt kích thước font chữ */
+    padding: 20px 0;
 }
-.item img {
-    width: 100px; /* Đặt chiều rộng thay đổi theo */
-    height: auto; /* Đặt chiều cao cố định */
-    margin-right: 30px; /* Đặt khoảng cách 30 pixel giữa các ảnh */
+
+.banner h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #ffffff; /* Màu chữ trắng */
 }
-.main {
-    min-height: 100vh;
-    flex-direction: row;
+
+/* Phần container chính */
+.container {
     display: flex;
-    justify-content: /*center*/flex-end; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Căn đều không gian giữa các phần tử */
+    align-items: flex-start;
+    width: 80%;
+    padding: 40px 0;
+}
+
+/* Phần text giới thiệu */
+.text-section {
+    width: 45%; /* Chiếm 45% chiều rộng container */
+    padding-right: 20px;
+}
+
+.text-section h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.text-section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Căn chỉnh các sản phẩm */
+.item {
+    text-align: center;
+    width: 15%; /* Chiếm 15% chiều rộng container */
+}
+
+.item img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ thẻ div */
+    height: auto;
+    border-radius: 8px; /* Bo góc ảnh */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng cho ảnh */
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Phần giới thiệu thêm bên dưới */
+.intro-text {
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #E2DFD0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #F97300;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
 }
